@@ -51,9 +51,6 @@
   - [Atualização da distribuição](#atualização-da-distribuição)
   - [Instalação do Docker e do Kubernetes](#instalação-do-docker-e-do-kubernetes)
   - [Inicialização do cluster](#inicialização-do-cluster)
-  - [Configuração do arquivo de contextos do kubectl](#configuração-do-arquivo-de-contextos-do-kubectl)
-  - [Inserindo os nós workers no cluster](#inserindo-os-nós-workers-no-cluster)
-    - [Múltiplas Interfaces](#múltiplas-interfaces)
   - [Instalação do pod network](#instalação-do-pod-network)
   - [Verificando a instalação](#verificando-a-instalação)
 - [Primeiros passos no k8s](#primeiros-passos-no-k8s)
@@ -1151,7 +1148,6 @@ To start using your cluster, you need to run the following as a regular user:
 ...
 kubeadm join --token 39c341.a3bc3c4dd49758d5 IP_DO_MASTER:6443 --discovery-token-ca-cert-hash sha256:37092
 ...
-```
 
 Em distribuições como o Ubuntu é possível que ocorra o seguinte erro:
 
